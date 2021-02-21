@@ -48,7 +48,7 @@ public class Translater {
 	private void translateEnglUkr(String text) {
 		
 		StringBuilder sb = new StringBuilder();
-		String[] words = (text.replaceAll("\n", "")).split("[ ]");
+		String[] words = text.split("[ ]");
 		for (String word : words) {
 			sb.append(hm.get(word));
 			sb.append(" ");
